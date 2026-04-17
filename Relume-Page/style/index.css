@@ -1,7 +1,7 @@
 /* Tags gerais */
 body{
     background-color: #F3F3F3;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -28,6 +28,7 @@ button{
 /* Navbar */
 
 header{
+    width: 100vw;
     height: 4.2rem;
     flex-direction: row;
     display: flex;
@@ -37,18 +38,11 @@ header{
     padding-right: 4rem;
 }
 
-.hero>h1{
-    text-shadow: 5px 0px 5px rgb(113, 4, 163);
-}
-
-.hero > p{
-    text-shadow: 2px 0px 5px rgb(0, 0, 0);
-}
 
 .header-nav{
     display: flex;
     align-items: center;
-
+    
 }
 
 .header-nav>nav{
@@ -90,16 +84,19 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    
     background-image: url(https://images3.alphacoders.com/134/1346768.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: center;
 }
+
 
 .hero>h1{
     width: 48rem;
     font-size: 3.5rem;
     text-align: center;
+    text-shadow: 5px 0px 5px rgb(113, 4, 163);
     margin-bottom: 1.5rem;
     color: #F3F3F3;
 }
@@ -108,6 +105,7 @@ header{
     width: 48rem;
     font-size: 1.125rem;
     text-align: center;
+    text-shadow: 2px 0px 5px rgb(0, 0, 0);
     margin-bottom: 2rem;
     color: #F3F3F3;
 }
@@ -140,6 +138,7 @@ header{
     background-image: url(https://i.pinimg.com/originals/47/a1/27/47a1277e7f4b89d9c25f1dbcf30349a0.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: center;
 }
 
 .contato-escopo{
@@ -366,3 +365,121 @@ footer > img{
     display: flex;
     gap: 1.5rem;
 }
+
+
+/* Media */
+
+@media (min-width: 320px) AND (max-width: 480px)  {
+    
+}
+
+@media (min-width: 481px) AND (max-width: 768px)  {
+    /* Navbar */
+    header{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .header-nav>nav{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        font-size: 0.7rem;
+    }
+    
+    .header-nav>nav>button{
+        display: flex;
+        font-size: 0.7rem;
+        align-items: center;
+        margin-right: 1rem;
+    }
+    
+    .btn-wrapper{
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .btn-wrapper>button{
+        padding: 0.5rem 1.25rem;
+        border: 1px solid black;
+    }
+    
+    .btn-secondary{
+        background: #000;
+        color: #F3F3F3;
+    }
+
+    .logo{
+        width: 2rem;
+        height: 1rem;
+    }
+
+
+    /* Hero Header */
+
+    .hero>h1{
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    
+    .hero>p{
+        width: 3rem;
+        font-size: 0.3rem;
+    }
+
+
+
+
+
+
+    /* Contact */
+    .Tagline{
+        font-size: 1rem;
+        margin-bottom: 0rem;
+    }
+    
+    .contato-escopo>h1{
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .contato-escopo>h2{
+        font-size: 1.125rem;
+        margin-bottom: 1.2rem;
+    }
+}
+
+@media (min-width: 769px) AND (max-width: 1024px)  {
+    .Tagline{
+        font-size: 1rem;
+        margin-bottom: 0rem;
+    }
+    
+    .contato-escopo>h1{
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .contato-escopo>h2{
+        font-size: 1.125rem;
+        margin-bottom: 1.2rem;
+    }
+}
+
+@media (min-width: 1025px) AND (max-width: 1280px)  {
+    .Tagline{
+        font-size: 1rem;
+        margin-bottom: 0rem;
+    }
+    
+    .contato-escopo>h1{
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .contato-escopo>h2{
+        font-size: 1.125rem;
+        margin-bottom: 1.2rem;
+    }
+}
+
