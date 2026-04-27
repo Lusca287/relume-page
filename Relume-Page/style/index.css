@@ -370,7 +370,24 @@ footer > img{
 /* Media */
 
 @media (min-width: 320px) AND (max-width: 480px)  {
-    
+    header{
+        height: 2.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .header-nav{
+
+    }
+    .header-nav>nav{
+        font-size: 0.7rem;
+    }
+    .header-nav>nav>button{
+        font-size: 0.7rem;
+    }
+    .logo{
+        width: 0px;
+        height: 0px;
+    }
 }
 
 @media (min-width: 481px) AND (max-width: 768px)  {
@@ -466,7 +483,7 @@ footer > img{
     }
 }
 
-@media (min-width: 1025px) AND (max-width: 1280px)  {
+@media (min-width: 1025px) AND (max-width: 1599px)  {
     .Tagline{
         font-size: 1rem;
         margin-bottom: 0rem;
