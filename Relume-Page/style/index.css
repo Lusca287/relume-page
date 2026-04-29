@@ -1,8 +1,7 @@
 /* Tags gerais */
-body {
-    background-color: #F3F3F3;
-    width: 100%;
-    height: 100vh;
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 * {
@@ -334,7 +333,7 @@ textarea {
 
 footer {
     background-color: #F3F3F3;
-    width: 100%;
+    width: 100vw;
     height: 23.875rem;
     display: flex;
     flex-direction: column;
@@ -355,6 +354,7 @@ footer>img {
     display: flex;
     gap: 2rem;
     margin-bottom: 5rem;
+    align-items: center;
 }
 
 .rodape {
@@ -374,14 +374,12 @@ footer>img {
 
 /* Media */
 
-@media (min-width: 320px) AND (max-width: 480px) {
-
+@media (min-width: 320px) and (max-width: 480px) {
     /* Nav */
     header {
-        width: 100%;
         height: 2.5rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     .header-nav>nav {
@@ -393,8 +391,7 @@ footer>img {
     }
 
     .logo {
-        width: 0px;
-        height: 0px;
+        display: none;
     }
 
     .btn-wrapper>button {
@@ -404,7 +401,7 @@ footer>img {
     .btn-wrapper,
     .hero-btn {
         display: flex;
-        gap: 0.2rem;
+        gap: 0.5rem;
     }
 
 
@@ -413,13 +410,15 @@ footer>img {
     .hero>p {
         font-size: 1rem;
         margin: 0;
-        width: 100%;
+        width: 90%;
+        margin-bottom: 1rem;
     }
 
     .hero>h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin: 0;
-        width: 100%;
+        width: 99%;
+        margin-bottom: 1rem;
     }
 
     .hero-btn>button {
@@ -434,8 +433,8 @@ footer>img {
     }
 
     .contato-escopo {
-        margin: 0rem;
-        height: 145vw;
+        margin: 2rem;
+        height: 35rem;
     }
 
     .Tagline {
@@ -463,6 +462,7 @@ footer>img {
 
     .input-name>input,
     .input-email>input {
+        display: flex;
         border-bottom: 1px solid #000;
         height: 2.2rem;
         width: 100%;
@@ -519,12 +519,50 @@ footer>img {
         align-items: flex-start;
     }
 
+    /* Footer */
+
+    footer {
+        height: 40%;
+        padding-top: 2rem;
+    
+        /*background-image: url(https://4kwallpapers.com/images/wallpapers/satoru-gojo-black-3840x2160-14684.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;*/
+    }
+    
+    footer>img {
+        margin-bottom: 1rem;
+    }
+    
+    .footer-nav {
+        display: flex;
+        margin-bottom: 2.5rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .rodape {
+        display: flex;
+        width: 88%;
+        border-top: 3px solid black;
+        height: 4rem;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .politicas {
+        display: flex;
+        gap: 1.5rem;
+    }
+
 
 
 }
 
 @media (min-width: 481px) AND (max-width: 768px) {
-
     /* Navbar */
     header {
         padding-left: 1rem;
