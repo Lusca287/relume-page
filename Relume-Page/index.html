@@ -7,83 +7,105 @@
     <link rel="stylesheet" href="style/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>Relume Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>MAISON VELL</title>
 </head>
 
 <body>
-    <header>
-        <img class="logo" src="Assets/Imagens/companylogo.png" alt="Logo">
+
+    <!-- ===== HEADER ===== -->
+    <header id="header">
+        <img class="logo" src="Assets/Imagens/companylogo.png" alt="Maison Vell">
+
         <div class="header-nav">
             <nav>
-                <a href="#header">Link One</a>
-                <a href="#contato">Link Two</a>
-                <a href="#footer">Link Three</a>
+                <a href="#header">Coleções</a>
+                <a href="#contato">Ateliê</a>
+                <a href="#footer">Editorial</a>
                 <button>
-                    <p>Link Four</p>
-                    <img src="Assets/Imagens/chevrondown.png" alt="Drop">
+                    <p>Universo</p>
+                    <img src="assets/Imagens/chevrondown.png" alt="Expandir">
                 </button>
             </nav>
             <div class="btn-wrapper">
-                <button>Button</button>
-                <button class="btn-secondary">Button</button>
+                <button>Entrar</button>
+                <button class="btn-secondary">Explorar</button>
+            </div>
+        </div>
+
+        <!-- Hamburguer mobile (CSS puro) -->
+        <input type="checkbox" id="menu-toggle">
+        <label class="hamburger-label" for="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="mobile-menu">
+            <a href="#header">Coleções</a>
+            <a href="#contato">Ateliê</a>
+            <a href="#footer">Editorial</a>
+            <a href="#">Universo</a>
+            <div class="mobile-btn-wrapper">
+                <button>Entrar</button>
+                <button class="btn-secondary">Explorar</button>
             </div>
         </div>
     </header>
 
 
+    <!-- ===== HERO ===== -->
     <div class="hero">
-        <h1>Medium length hero heading goes here</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
-            Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+        <p class="hero-eyebrow">Coleção Outono — 2025</p>
+        <h1>O silêncio elegante das formas perfeitas</h1>
+        <p>Cada peça nasce de uma obsessão silenciosa com o detalhe. Tecidos que respiram, cortes que definem — moda como segunda pele.</p>
         <div class="hero-btn">
-            <button class="first-btn">Button</button>
-            <button>Button</button>
+            <button class="first-btn">Descobrir a Coleção</button>
+            <button>Ver Lookbook</button>
         </div>
     </div>
 
+
+    <!-- ===== CONTATO ===== -->
     <section id="contato">
         <div class="contato-escopo">
-            <p class="Tagline">Tagline</p>
-            <h1>Contact Us</h1>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
+            <p class="Tagline">Ateliê Privado</p>
+            <h1>Fale Conosco</h1>
+            <h2>Atendimento exclusivo para consultoria de estilo e encomendas personalizadas.</h2>
 
             <form action="">
                 <div class="input-name">
-                    <label for="Name">Name</label>
-                    <input type="text" id="Name" placeholder=" Digite o seu nome.">
+                    <label for="Name">Nome</label>
+                    <input type="text" id="Name" placeholder="Seu nome completo">
                 </div>
-    
+
                 <div class="input-email">
-                    <label for="Email">Email</label>
-                    <input type="Email" id="Email" placeholder=" Digite o seu email.">
+                    <label for="Email">E-mail</label>
+                    <input type="Email" id="Email" placeholder="seu@email.com">
                 </div>
-    
+
                 <div class="input-msg">
-                    <label for="Mensagem">Message</label>
-                    <textarea name="Mensagem" id="Mensagem" placeholder=" Type Your Message.."></textarea>
+                    <label for="Mensagem">Mensagem</label>
+                    <textarea name="Mensagem" id="Mensagem" placeholder="Descreva sua solicitação..."></textarea>
                 </div>
-    
+
                 <div class="check">
                     <input type="checkbox">
-                    <p>I accept the <a href="">Terms</a></p>
+                    <p>Concordo com os <a href="">Termos de Privacidade</a></p>
                 </div>
-    
-    
+
                 <div class="Forms-buttons">
-                    <button class="enviar" type="submit"><span>Submit</span></button>
-                    <button class="resetar" type="reset"><span>Reset</span></button>
+                    <button class="enviar" type="submit"><span>Enviar Mensagem</span></button>
+                    <button class="resetar" type="reset"><span>Limpar</span></button>
                 </div>
             </form>
-
-
         </div>
     </section>
 
-    <footer>
-        <img src="Assets/Imagens/companylogo.png" alt="Logo">
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="footer">
+        <img src="Assets/Imagens/companylogo.png" alt="Maison Vell">
         <nav class="footer-nav">
             <a href=""><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-whatsapp"></i></a>
@@ -92,14 +114,14 @@
             <a href=""><i class="fa-brands fa-tiktok"></i></a>
         </nav>
         <div class="rodape">
-            <p>© 2024 Relume. All rights reserved.</p>
+            <p>© 2025 Maison Vell. Todos os direitos reservados.</p>
             <div class="politicas">
-                <a href="">Privacy Policy</a>
-                <a href="">Terms of Service</a>
-                <a href="">Cookies Settings</a>
+                <a href="">Política de Privacidade</a>
+                <a href="">Termos de Uso</a>
+                <a href="">Cookies</a>
             </div>
         </div>
     </footer>
-</body>
 
+</body>
 </html>
